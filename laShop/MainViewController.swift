@@ -4,6 +4,8 @@ import UIKit
 class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     //---------------------------//--------------------------- MARK: -------> IBOutlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var pickerView1: UIDatePicker!
+    @IBOutlet weak var pickerView2: UIDatePicker!
     //---------------------------//--------------------------- MARK: -------> Properties
     var titles = ["CAMÉRAS", "LENTILLES", "TRÉPIEDS"]
     var numberOfElementsInSections: [Int]!
@@ -34,6 +36,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         numberOfElementsInSections = [inventory["CAMÉRAS"]!.count, inventory["LENTILLES"]!.count, inventory["TRÉPIEDS"]!.count]
+//        pickerView1.setValue(UIColor.white, forKeyPath: "textColor")
+        pickerView1.setValue(UIColor(red: 190/255, green: 144/255, blue: 212/255, alpha: 1.0), forKeyPath: "textColor")
     }
     //---------------------------//--------------------------- MARK: -------> TableView Section Stuff
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -64,7 +68,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.backgroundColor = UIColor.clear
         
         if let anImgView = cell.viewWithTag(101) as! UIImageView! {
-            anImgView.image = UIImage(named: "cam.jpg")
+            anImgView.image = UIImage(named: "cameraModel.jpg")
         }
         
         return cell
