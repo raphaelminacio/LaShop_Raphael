@@ -36,8 +36,8 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         numberOfElementsInSections = [inventory["CAMÉRAS"]!.count, inventory["LENTILLES"]!.count, inventory["TRÉPIEDS"]!.count]
-//        pickerView1.setValue(UIColor.white, forKeyPath: "textColor")
         pickerView1.setValue(UIColor(red: 190/255, green: 144/255, blue: 212/255, alpha: 1.0), forKeyPath: "textColor")
+        pickerView2.setValue(UIColor(red: 190/255, green: 144/255, blue: 212/255, alpha: 1.0), forKeyPath: "textColor")
     }
     //---------------------------//--------------------------- MARK: -------> TableView Section Stuff
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -36,7 +36,7 @@ class SectionController: UIViewController, UITextFieldDelegate {
             passwordField.isSecureTextEntry = false
         } else {
             passwordField.placeholder = "Insérer votre mot de passe"
-            passwordButton.setTitle("Cliquez pour valider", for: .normal)
+            passwordButton.setTitle("Valider", for: .normal)
             passwordField.isSecureTextEntry = true
         }
     }

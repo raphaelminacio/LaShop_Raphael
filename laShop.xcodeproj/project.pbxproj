@@ -70,22 +70,46 @@
 		0058B0611F127B6E008EA176 /* laShop */ = {
 			isa = PBXGroup;
 			children = (
-				000CCE541FB20A5800F81C03 /* Animate.swift */,
-				000CCE551FB20A5800F81C03 /* UserDefaultsManager.swift */,
+				0058B0691F127B6E008EA176 /* Assets.xcassets */,
+				0058B06E1F127B6E008EA176 /* Info.plist */,
+				285D643E1FDE1DA2008BD27E /* Resources */,
+				285D643D1FDE1CF2008BD27E /* View */,
+				285D643C1FDE1CDE008BD27E /* Controller */,
 				0058B0621F127B6E008EA176 /* AppDelegate.swift */,
 				0058B0641F127B6E008EA176 /* MainViewController.swift */,
 				00CFD6841FBB753B00ECC0CD /* AdminViewController.swift */,
 				000CCE581FB20A8100F81C03 /* SectionController.swift */,
+			);
+			path = laShop;
+			sourceTree = "<group>";
+		};
+		285D643C1FDE1CDE008BD27E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		285D643D1FDE1CF2008BD27E /* View */ = {
+			isa = PBXGroup;
+			children = (
 				0058B0661F127B6E008EA176 /* Main.storyboard */,
+				0058B06B1F127B6E008EA176 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		285D643E1FDE1DA2008BD27E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				000CCE541FB20A5800F81C03 /* Animate.swift */,
+				285D553E1FD9AA7F001E1F08 /* DesignableView.swift */,
 				285D553C1FD99957001E1F08 /* RoundButton.swift */,
 				00F85DF21F129877001B2255 /* Parser1.swift */,
 				00CFD6861FBB75CD00ECC0CD /* Parser2.swift */,
-				0058B0691F127B6E008EA176 /* Assets.xcassets */,
-				0058B06B1F127B6E008EA176 /* LaunchScreen.storyboard */,
-				0058B06E1F127B6E008EA176 /* Info.plist */,
-				285D553E1FD9AA7F001E1F08 /* DesignableView.swift */,
+				000CCE551FB20A5800F81C03 /* UserDefaultsManager.swift */,
 			);
-			path = laShop;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
